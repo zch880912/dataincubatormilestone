@@ -18,7 +18,7 @@ def my_form():
 def my_form_post():
     stock = request.form['text']
     try:
-        data=Quandl.get('WIKI/%s'%stock,trim_start='2016-02-01',returns='Pandas')
+        data=Quandl.get('WIKI/%s'%stock,authtoken='m8MxwGP1oVznexF5xM-4',trim_start='2016-02-01',returns='Pandas')
     # data=Quandl.get('WIKI/%s'%stock,trim_start='2016-02-01',returns='Pandas')
         p1 = figure(x_axis_type = "datetime",\
             title="Last One Month Stock Price of %s"%stock,\
