@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="http://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.css" type="text/css" />
+    <script type="text/javascript" src="http://cdn.pydata.org/bokeh/release/bokeh-0.11.1.min.js">
+    </script>
+    {{ script | safe }}
+  </head>
+  <body>
+    <div class=page>
+      {{ div | safe }}
+    </div>
+    <form>
+  <input Type="button" VALUE="Back to Main" onClick="history.go(-1);return true;">
+</form>
+  </body>
+</html>
