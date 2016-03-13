@@ -1,13 +1,12 @@
 from flask import Flask
 from flask import request
 from flask import render_template,redirect
-import os
+# import os
 import Quandl
 from bokeh.plotting import figure, show, output_file, vplot
 from bokeh.resources import CDN
 from bokeh.embed import file_html
 from bokeh.embed import components
-# from bokeh.embed import embed_items 
 
 app = Flask(__name__)
 
@@ -41,5 +40,6 @@ def my_form_post():
 # 	return data.to_html()
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
+    # port = int(os.environ.get("PORT", 5000))
+    # app.run(host='0.0.0.0', port=port)
+    app.run()
